@@ -23,3 +23,13 @@ console.log(PI);
 
 const combined= country +" "+ 'is my country and it is in ' + continent  +" " + 'and it has population of ' + population + " " + 'people and the language spoken there is ' + language1;
 console.log(combined);
+
+//1Task Mark and John are trying to compare their BMI (Body Mass Index)
+let massMark= 78;
+let heightMark= 1.69;
+let massJohn = 95;
+let heightJohn= 1.95
+let BMIMark= massMark/(heightMark *heightMark);
+let BMIJohn= massJohn/(heightJohn *heightJohn);
+console.log(BMIMark);
+console.log(BMIJohn)
