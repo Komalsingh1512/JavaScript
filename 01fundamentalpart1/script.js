@@ -27,3 +27,16 @@ let js = 'amazing';
         let myname1= 'komal singh';
         let myname2= "Neha singh";
         console.log(myname1 + " " + myname2);
+        //stringtemplet
+        const myname3= `my name is  ${myname1} and i am friend with ${myname2}`;
+        console.log(myname3);
+        //type conversion
+        const inputyear= '1991';
+        console.log(Number(inputyear) + 18);
+        console.log(inputyear + 18);//this will give us 199118 because inputyear is a string and when we add a number to a string, it will concatenate the two values instead of adding them. to avoid this, we can use the Number() function to convert the string to a number before adding it to 18.
+        console.log(Number('komal'));//this will give us NaN because 'komal' is not a number and cannot be converted to a number. NaN stands for "Not a Number" and it is a special value that indicates that the result of a mathematical operation is not a valid number.
+        console.log(typeof NaN);//this will give us 'number' because NaN is considered a number in JavaScript, even though it is not a valid number. This is a quirk of the JavaScript language and it can be confusing for beginners, but it is important to understand that NaN is a special value that indicates an invalid number, and it should not be treated as a regular number in our code.
+        console.log(String(23), 23);//this will give us '23' and 23 because the String() function converts the number 23 to a string, but it does not change the original number 23. The first value is the string '23' and the second value is the number 23, which is still a number and can be used in mathematical operations. This is an example of type conversion, where we can convert a value from one type to another, but it does not change the original value unless we assign it to a new variable.
+        let n = '1' + 1;//this will give us '11' because when we add a string and a number, the number is converted to a string and the two values are concatenated together. The result is the string '11', which is not a number and cannot be used in mathematical operations. This is an example of type coercion, where JavaScript automatically converts values from one type to another based on the context of the operation. In this case, it converts the number 1 to a string and concatenates it with the string '1', resulting in '11'.
+        n = n - 1;//this will give us 10 because when we subtract a number from a string, JavaScript tries to convert the string to a number before performing the subtraction. In this case, it converts the string '11' to the number 11 and then subtracts 1 from it, resulting in 10. This is another example of type coercion, where JavaScript automatically converts values based on the context of the operation. In this case, it converts the string '11' to a number so that it can perform the subtraction operation correctly.
+        console.log(n);
