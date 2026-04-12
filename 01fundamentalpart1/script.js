@@ -31,6 +31,7 @@ let js = 'amazing';
         const myname3= `my name is  ${myname1} and i am friend with ${myname2}`;
         console.log(myname3);
         //type conversion
+        //Type conversion is done manually by the programmer while coercion happen automatically 
         const inputyear= '1991';
         console.log(Number(inputyear) + 18);
         console.log(inputyear + 18);//this will give us 199118 because inputyear is a string and when we add a number to a string, it will concatenate the two values instead of adding them. to avoid this, we can use the Number() function to convert the string to a number before adding it to 18.
@@ -40,3 +41,10 @@ let js = 'amazing';
         let n = '1' + 1;//this will give us '11' because when we add a string and a number, the number is converted to a string and the two values are concatenated together. The result is the string '11', which is not a number and cannot be used in mathematical operations. This is an example of type coercion, where JavaScript automatically converts values from one type to another based on the context of the operation. In this case, it converts the number 1 to a string and concatenates it with the string '1', resulting in '11'.
         n = n - 1;//this will give us 10 because when we subtract a number from a string, JavaScript tries to convert the string to a number before performing the subtraction. In this case, it converts the string '11' to the number 11 and then subtracts 1 from it, resulting in 10. This is another example of type coercion, where JavaScript automatically converts values based on the context of the operation. In this case, it converts the string '11' to a number so that it can perform the subtraction operation correctly.
         console.log(n);
+        //=== and === are comparison operators
+        //that check for equality between two values. The difference between them is that === checks for strict equality, meaning that it checks both the value and the type of the operands, while == checks for loose equality, meaning that it only checks for value and allows for type coercion. For example, if we compare the number 23 and the string '23' using ==, it will return true because it converts the string to a number before comparing them. However, if we use === to compare the same values, it will return false because they are of different types (number and string). It is generally recommended to use === for comparisons in JavaScript to avoid unexpected results due to type coercion.
+        console.log(23 === 23);//this will give us true because both operands are the same value and type (number).
+        console.log(23 === '23');//this will give us false because the left operand is a number and the right operand is a string, so they are of different types and not strictly equal.
+        console.log(23 == '23');//this will give us true because the == operator allows for type coercion, so it converts the string '23' to the number 23 before comparing them, resulting in true. However, it is generally recommended to use === for comparisons in JavaScript to avoid unexpected results due to type coercion.
+        
+
