@@ -1,4 +1,6 @@
 'use strict';
+//parameters are the placeholders in function definations aruguments are actual values passed during function calls
+
 // Function declaration
 function logger(){
      console.log("My name is Komal Kumari Singh")
@@ -60,4 +62,4 @@ const komalObject={
 };
 console.log(komalObject.firstName);//it is used when we know the name of the property
 console.log(komalObject["lastName"]);
-
+console.log(komalObject.age);
