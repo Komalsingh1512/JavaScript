@@ -1,86 +1,102 @@
-/* *{
-    margin: 0;
-    padding: 0;
+nav{
+    border: 4px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    margin: auto;
+    padding: 10px 0;
+    position: relative;
+}
+/* body{
+    border: 4px solid rgb(213, 23, 23);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } */
 header h1{
+    margin-top: 0;
+    height: 100%;
     text-align: center;
-    background: #a88c8c;
+    background: #6c656587;
 }
-header p{
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-    background: #475c1c76;
+header img{
+    width: 100%;
 }
-header h2{
-    text-align: center;
-    background: #235162af;
-    border: 2px solid rgb(1, 17, 1);
-}
-img{
-    display: block;
-    margin : auto;
-    border: 4px solid red ;
-}
-img:hover{
-    border: 10px solid green ;
-}
-article{
-    border :3px dotted rgb(239, 134, 5);
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+article p{
     font-size: large;
     font-weight: bold;
 }
-article p{
-    background: #c9c9c9;
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-}
-article p:hover{
-    background: #c9c9c9;
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-    color: red;
-}
-h6{
-    font-weight: bold;
-    font-size: 15px;
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-    background: #6a295588;
-}
 article a{
-    text-decoration: none;
     color: black;
 }
-article a:hover{
-    text-decoration: underline;
-    color: rgb(108, 155, 6);
+.colors{
+    /* background: #945454; */
+    height: 40px;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
 }
-aside{
-    width: 50%;
-    padding: 10px;
-    background: #000;
-    color: #fff;
+.colors .color1{
+    background: red;
+    width: 30px;
+    margin: 3px ;
+}
+.colors .color2{
+    background: orange;
+    width: 30px;
+    margin: 3px ;
+}
+.colors .color3{
+    background: yellow;
+    width: 30px;
+    margin: 3px ;
+}
+.colors .color4{
+    background: green;
+    width: 30px;
+    margin: 3px ;
+}
+.colors .color5{
+    background: blue;
+    width: 30px;
+    margin: 3px ;
+}
+.colors .color6{
+    background: purple;
+    width: 30px;
+    margin: 3px ;
+
+}
+.box_one{
+    background: red;
+    color: white;
+    letter-spacing: 2px;
+    font-size: larger;
+    font-weight: bold;
+    padding: 4px 10px;
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+
+}
+.list_item{
+    list-style-type: square;
+    margin-left:2px;
+    padding-left: 0;
+    list-style-position: inside;
 }
 footer{
     text-align: center;
-    background: #a88c8c;
-    padding: 10px;
+    background: #000;
+    
 }
 footer button{
-    border: 2px solid rgba(93, 93, 5, 0.73);
-    background: #a06262;
     color: #fff;
+    background: #000;
+    width: 100%;
+    height: 50px;
 }
 footer button:hover{
-    border: 2px solid rgba(93, 93, 5, 0.73);
     background: #fff;
-    color: #a06262;
+    color: #000;
     font-size: larger;
     cursor: pointer;
 }
