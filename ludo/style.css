@@ -14,10 +14,12 @@ body{
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(15,1fr);
-    height: 100vh;
-    width: 100%;
+    height: 95vmin;
+    width: 95vmin;
+    max-width: 900px;
+    max-height: 900px;
     border:4px solid black;
-    max-width: 1100px;
+    margin: auto;
 }
 
 /* common big box */
@@ -119,100 +121,108 @@ body{
 }
 
 /* top center path */
-.item2{
+/* grid paths setup */
+.item2,
+.item4,
+.item6,
+.item8 {
+    align-items: stretch;
+    justify-items: stretch;
+}
+.item2, .item8 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
-.item2 div{
-    border:1px solid black;
-    background:#eee;
-}
-/* GREEN PATH */
-.GREEN-path{
-    background:green !important;
-}
-
-/* left center path */
-.item4{
-    display:grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3,1fr);
-}
-.item4 div{
-    border:1px solid black;
-    background:#eee;
-}
-/* red PATH */
-.red-path{
-    background:red !important;
-}
-
-/* RIGHT CENTER PATH */
-.item6{
-    display:grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3,1fr);
-}
-.item6 div{
-    border:1px solid black;
-    background:#eee;
-}
-/* YELLOW PATH */
-.yellow-path{
-    background:yellow !important;
-}
-/* bottom center path */
-.item8{
+.item4, .item6 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
-.item8 div{
-    border:1px solid black;
-    background:#eee;
+/* path cells */
+.item2 div,
+.item4 div,
+.item6 div,
+.item8 div {
+    border: 1px solid black;
+    background: #fff;
 }
-/* GREEN PATH */
-.blue-path{
-    background:deepskyblue !important;
+/* colored paths */
+.green-path {
+    background: green !important;
 }
+.red-path {
+    background: red !important;
+}
+
+.yellow-path {
+    background: yellow !important;
+}
+
+.blue-path {
+    background: deepskyblue !important;
+}
+
 /* center triangles */
 .triangle{
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: 100%;
     position: absolute;
 }
-.greentri{
+/* .greentri{
     border-top:70px solid green;
      border-left:75px solid transparent;
     border-right:75px solid transparent;
-    
-
     top:0;
     left:0;
-}
-.yellowtri{
+} */
+/* .yellowtri{
 
-    border-top:75px solid transparent;
-    border-bottom:65px solid transparent;
-    border-right:80px solid yellow;
+    border-top:70px solid transparent;
+    border-bottom:70px solid transparent;
+    border-right:75px solid yellow;
 
     top:0;
     right:0;
-}
+} */
 /* BLUE TRIANGLE (BOTTOM) */
-.bluetri{
+/* .bluetri{
     border-left:75px solid transparent;
-    border-right:70px solid transparent;
+    border-right:75px solid transparent;
     border-bottom:70px solid deepskyblue;
     bottom:0;
     left:0;
-}
+} */
 /* RED TRIANGLE (LEFT) */
-.redtri{
+/* .redtri{
     border-top:70px solid transparent;
     border-bottom:70px solid transparent;
-    border-left:70px solid red;
+    border-left:75px solid red;
     top:0;
     left:0;
+} */
+
+.greentri {
+    background: green;
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 50%);
+    clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+
+.yellowtri {
+    background: yellow;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+    clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+
+.bluetri {
+    background: deepskyblue;
+    -webkit-clip-path: polygon(0 100%, 100% 100%,50% 50%);
+    clip-path: polygon(0 100%, 100% 100%, 50% 50%);
+}
+
+/* RED TRIANGLE (LEFT) */
+.redtri {
+    background: red;
+    /* -webkit-clip-path: polygon(0 100%, 0 0, 50% 50%); */
+    clip-path: polygon(0 0, 0 100%, 50% 50%);
 }
