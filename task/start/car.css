@@ -21,7 +21,10 @@ body{
 .main-container img{
      width:100%;
     height:100%;
-    object-fit:fill;
+    object-fit:fill;  /*to fit the object in the parent container */
+    bottom: -140px;
+    left: -30px;
+    overflow: hidden;
 }
 .car-class{
     width: 300px;
@@ -29,6 +32,7 @@ body{
     object-fit: contain;
     position: absolute;
     /* background: mediumpurple; */
+    left:-50px;
     animation-name: carinmotion;
     animation-duration: 5s;
     animation-delay: 2s;
@@ -38,9 +42,10 @@ body{
     
 }
 .car-class img{
-    width:100%;
-    height:300px;
-    object-fit:fill;  /*to fit the object in the parent container */
+     width:100%;
+    height:100%;
+    object-fit:contain;  /*to fit the object in the parent container */
+    bottom: -140px;
     left: -30px;
     overflow: hidden;
 }
