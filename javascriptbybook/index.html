@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function alerttest()
+{
+    alert('Danger! Danger!');
+}    </script>
+</head>
+<body onload="alert('page loaded');" onunload="alert('page unloaded');">
+    <form>
+        <input type="button" value="press me" onclick="alert('you just press the button');">
+        <input type="button" value="Don't press me" onclick="alerttest();">
+    </form>
+<p><a href="#" onclick="alert('rolled over');">Roll this link</a></p> 
+</body>
+</html>
