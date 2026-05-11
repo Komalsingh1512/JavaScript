@@ -2,7 +2,7 @@
 let number = Math.trunc(Math.random()*20)+1;
 let score = 20;
 let highscore = 0;
-document.querySelector('.number').textContent= number;
+
 document.querySelector('.check').addEventListener('click', function(){
    const guess = Number(document.querySelector('.guess').value);//converting string to number
    console.log(guess, typeof guess);// 5 'number'
@@ -11,6 +11,13 @@ document.querySelector('.check').addEventListener('click', function(){
    }
    else if(guess === number){
     document.querySelector('.message').textContent= '🤩Correct Number!';
+    document.querySelector('.number').textContent= number;
+
+    //tocheckhighscore
+    if(score >highscore){
+      highscore= score;
+      document.querySelector('.highscore').textContent=highscore;
+    }
    }
    else if(guess > number) {
     if(score>1){
@@ -35,3 +42,12 @@ else{
    }
 }
 });
+//adding the again buttonn
+document.querySelector('.again').addEventListener('click', function(){
+   score = 20;
+   number= Math.trunc(Math.random() *20) +1;
+   document.querySelector('.message').textContent= '😏Start Quessing....';
+   document.querySelector('.score').textContent=score;
+   document.querySelector('.number').textContent= '❓';
+   document.querySelector('.guess').value="";
+})
