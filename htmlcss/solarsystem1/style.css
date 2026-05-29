@@ -30,7 +30,7 @@ body{
 }
 .orbit{
     position: absolute;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.2);
     border-radius: 50%;
     top:50%;
     left: 50%;
@@ -38,7 +38,7 @@ body{
 }
 .mercury-orbit{
     width: 200px;
-    height: 200px;
+    height: 180px;
     animation: rotate 8s linear infinite;
 }
 .mercury{
@@ -53,7 +53,7 @@ body{
 }
 .venus-orbit{
     width: 300px;
-    height: 300px;
+    height: 280px;
     animation: rotate 12s linear infinite;
 }
 .venus{
@@ -69,7 +69,7 @@ body{
 }
 .earth-orbit{
     width: 400px;
-    height: 400px;
+    height: 380px;
     animation: rotate 16s linear infinite;
 }
 .earth{
@@ -82,10 +82,30 @@ body{
     left: -18px;
     transform: translateY(-50%);
 }
+.moon-orbit{
+    width: 60px;
+    height: 50px;
+    top: 50%;
+    left: 0.5%;
+    transform: translate(-50%, -50%);
+    animation: moonRotate 3s linear infinite;
+}
+.moon{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: lightgray;
+    border-radius: 50%;
+    top: 40%;
+    left: -5px;
+    transform: translateY(-50%);
+}
 .mars-orbit{
     width: 500px;
-    height: 500px;
-    animation: rotate 20s linear infinite;
+    height: 480px;
+    animation: rotate 20S ;
+    animation-timing-function: horizontal-timeline;
+    animation-iteration-count: infinite;
 }
 .mars{
     position: absolute;
@@ -99,7 +119,7 @@ body{
 }
 .jupiter-orbit{
     width: 630px;
-    height: 630px;
+    height: 600px;
     animation: rotate 25s linear infinite;
 }
 .jupiter{
@@ -120,5 +140,14 @@ body{
     }
     to{
         transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+ @keyframes moonRotate{
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
