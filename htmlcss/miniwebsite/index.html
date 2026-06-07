@@ -1,10 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Plotlist</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="image/black-logo.png" alt="Plotlist Logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="category.html">CATEGORY</a></li>
+            <li><a href="listing.html">LISTING</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+
+        <button class="listing-btn">
+            <i class="fa-solid fa-circle-plus"></i> &nbsp;
+            Add Your Listing
+        </button>
+
+    </nav>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h5>OVER 36,500+ ACTIVE LISTINGS</h5>
+
+        <h4>Find Nearby Places & Things</h4>
+
+        <!-- SEARCH BAR -->
+
+        <div class="search-box">
+
+            <select>
+                <option>All Areas</option>
+                <option>Restaurant</option>
+                <option>Hotel</option>
+                <option>Shopping</option>
+                <option>Entertainment</option>
+            </select>
+
+            <input type="text"
+            placeholder="Enter a location">
+
+            <select>
+                <option>Price Range</option>
+                <option>Price Range</option>
+                <option>$100 -$250</option>
+                <option>$250 -$500</option>
+                <option>$500 -$1000</option>
+                <option>$1000 or more </option>
+            </select>
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search Now
+            </button>
+
+        </div>
+
+        <!-- CATEGORY ICONS -->
+
+        <div class="categories">
+
+            <div class="card">
+                <i class="fa-solid fa-house"></i>
+                <p>Apartments</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-burger"></i>
+                <p>Food & Life</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-car"></i>
+                <p>Cars</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Shopping</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-earth-americas"></i>
+                <p>Traveling</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- second page content  -->
+<section class="categories-section">
+    <div class ="section-heading">
+        <h2>Popular Categories</h2>
+        <p>CHECK THEM OUT</p>
+    </div>
+    <div class="category-container">
+        <div class="sidebar">
+            <div class="category active">
+                <i class="fa-solid fa-house"></i>
+                <span>Apartments</span>
+            </div>
+            <div class="category active">
+                <i class="fa-solid fa-burger"></i>
+                <span>Food & Life</span>
+            </div>
+            <div class="category active">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Cars</span>
+            </div>
+            <div class="category active">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span>Shopping</span>
+            </div>
+            <div class="category active">
+                <i class="fa-solid fa-house"></i>
+                <span>Traveling</span>
+            </div>
+        </div>
+        <div class = "content">
+            <h2>One Of The Most Trending Stuffs Right Now!</h2>
+
+            <p>
+                Plot Listing is a responsive Bootstrap 5 website
+                template that included 4 different HTML pages.
+                This template is provided by TemplateMo website.
+                You can apply this layout for your static or dynamic
+                CMS websites.
+            </p>
+            <button class="discover-btn">
+                <i class="fa-solid fa-eye"></i>
+                Discover More
+            </button>
+        </div>
+        <div class="image-box">
+            <img src="house.jpg" alt="house">
+        </div>
+    </div>
+</section>
+
+</body>
 </html>
