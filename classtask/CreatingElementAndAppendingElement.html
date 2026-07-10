@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Creating and appending an element </p>
+    <div id="box"></div>
+</body>
+</html>
+<script>
+    var box = document.getElementById("box")
+    var Student = document.createElement("h1")
+    Student.innerHTML= "Hi i am student"
+    Student.style.color= "blue"
+    Student.style.backgroundColor= "white"
+    var StudentAddress = document.createElement("p")
+    StudentAddress.innerHTML= "I am from India"
+    var connectBtn = document.createElement('button')
+    connectBtn.innerHTML= "Connect with me"
+    connectBtn.style.backgroundColor= "red"
+    connectBtn.style.color= "white"
+    box.append(Student, StudentAddress, connectBtn)
+    box.style.backgroundColor= "lightblue"
+    box.style.padding= "20px"
+    box.style.display= "flex"
+    box.style.flexDirection= "column"
+</script>

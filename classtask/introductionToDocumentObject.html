@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentObjectModel</title>
+</head>
+<body>
+    <h1 id="heading"> Hi i am document obejct model </h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga vitae culpa explicabo laudantium repudiandae illum laborum consequatur. Laborum recusandae dicta atque ratione numquam commodi reprehenderit. Minima voluptatum eaque aliquam!</p>
+</body>
+
+</html>
+
+<script>
+    //by element id
+var headingOne= document.getElementById("heading")
+headingOne.innerHTML= "Hi object model"
+console.log(headingOne)
+
+ //by class name
+var headingTwo= document.getElementsByClassName("heading")
+console.log(headingTwo)
+</script>
+
+<!-- what is DOM?
+DOM is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can connect to the page.
+why we use DOM?
+DOM is used to manipulate the HTML and CSS of a webpage. It allows developers to dynamically change the content, structure, and style of a webpage without having to reload the entire page. This enables the creation of interactive and responsive web applications. 
+-->
+
+<!-- //dom selectors 
+1) document.getElementById() - selects an element by its ID
+2) document.getElementsByClassName() - selects elements by their class name
+3) document.getElementsByTagName() - selects elements by their tag name
+4) document.querySelector() - selects the first element that matches a CSS selector
+5) document.querySelectorAll() - selects all elements that match a CSS selector
+

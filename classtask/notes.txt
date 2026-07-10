@@ -1,0 +1,33 @@
+Function: It is a block of code that is realted to particular functionality 
+Different types of functin:
+1) Function Declaration 
+2) Anonymous function(function without any name)
+3) CallBack Function 
+4) Higher order Function 
+5) Arrow Function 
+6) Calculator Function 
+7) 
+var helloFun = function(){
+    console.log("Hello")
+}
+helloFun()
+
+There are some inbuilt functions:
+1) for array
+2) for string 
+3) for maths
+
+
+object: It is a real world entiity wgich using state and behavious where state tells how they look and behavoir 
+
+Object: it is collections of key vakue pairs it can store hetrogenous type of data 
+//where key value pair - one entry, in an object we can have multiple entries 
+//declartion 
+ var students = {}// object literal 
+ //console.log(student)
+//initializatiob(storing data) of object- there are two ways to add data to the object 
+1) using dot notation(.) //  student.name="Rakesh"
+
+2) using square bracket notation ([])
+
+ 
