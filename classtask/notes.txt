@@ -30,4 +30,19 @@ Object: it is collections of key vakue pairs it can store hetrogenous type of da
 
 2) using square bracket notation ([])
 
- 
+ //higher order function: 
+ A Higher-Order Function is a function that:
+Takes another function as an argument, OR
+Returns another function.
+Interview Definition:
+A Higher-Order Function is a function that accepts one or more functions as arguments or returns a function as its result.
+//code
+function greet(name) {
+    return "Hello " + name;
+}
+
+function processUser(func) {
+    console.log(func("Komal"));// this becomes console.log(greet("Komal"));
+}
+
+processUser(greet);// hello komal 
