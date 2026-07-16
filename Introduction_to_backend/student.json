@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Komal",
+    "age": 23,
+    "isMarried": true,
+    "city": "noida"
+  },
+  {
+    "name": "Rount",
+    "age": 23,
+    "isMarried": true,
+    "city": "patna"
+  }
+]

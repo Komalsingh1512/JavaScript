@@ -1,0 +1,10 @@
+Server(backend)- Takes rewuest and serve response
+How to create server using node.js
+1. using htto module
+2. using express franework
+3. others 
+Node.js- Runtime environment (v8- Engine) + Inbuilt Modules (using these module you can create server)
+MOdule: In javascript model is an obeject which is having some methods and properties
+There are follwoing types of modeule:
+1. Inbuild Modules- comes with node.js by default 
+2. Internal Module- 
